@@ -5,25 +5,25 @@
         smallest divisor if found
         0 if n is prime
 */
-int trial_division(long int n){
-long int f;
+int trial_division(long int num){
+long int fac;
 
-if (n%2 == 0){
-	printf("%lu=%lu*%i\n", n, n/2, 2);
+if (num % 2 == 0){
+	printf("%lu=%lu*%i\n", num, num/2, 2);
 	return 0;
 }
 
-f = 3;
-while (f*f <= n)
+fac = 3;
+while (fac * fac  <= num)
 {
-	if (n%f == 0){
-		printf("%lu=%lu*%lu\n", n, n/f, f);
+	if (num % fac == 0){
+		printf("%lu=%lu*%lu\n", num, num/fac, fac);
 		return 0;
 	}
 	else{
-		f += 2;
+		fac += 2;
 	}
 }
-printf("%lu=%lu*%i\n", n, n, 1);
+printf("%lu=%lu*%i\n", num, num, 1);
 return 0;
 }
