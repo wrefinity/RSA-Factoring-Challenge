@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from factors_functions import *
+from factorizer  import *
 if __name__ == '__main__':
 
     print(unix_time(print_factors))
